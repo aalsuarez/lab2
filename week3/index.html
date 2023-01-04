@@ -2,42 +2,29 @@
 <html>
 <head>
 <style>
-div {
-  border: 3px solid #4CAF50;
-  padding: 5px;
-}
-
-.img1 {
-  float: right;
-}
-
-.img2 {
-  float: right;
-}
-
-.clearfix {
-  overflow: auto;
+div > p {
+  background-color: yellow;
 }
 </style>
 </head>
 <body>
 
-<h2>Without Clearfix</h2>
+<h2>Child Selector</h2>
 
-<p>This image is floated to the right. It is also taller than the element containing it, so it overflows outside of its container:</p>
+<p>The child selector (>) selects all elements that are the children of a specified element.</p>
 
 <div>
-  <img class="img1" src="pineapple.jpg" alt="Pineapple" width="170" height="170">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
+  <p>Paragraph 1 in the div.</p>
+  <p>Paragraph 2 in the div.</p>
+  <section>
+    <!-- not Child but Descendant -->
+    <p>Paragraph 3 in the div (inside a section element).</p>
+  </section>
+  <p>Paragraph 4 in the div.</p>
 </div>
 
-<h2 style="clear:right">With Clearfix</h2>
-<p>We can fix this by adding a clearfix class with overflow: auto; to the containing element:</p>
-
-<div class="clearfix">
-  <img class="img2" src="pineapple.jpg" alt="Pineapple" width="170" height="170">
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet...
-</div>
+<p>Paragraph 5. Not in a div.</p>
+<p>Paragraph 6. Not in a div.</p>
 
 </body>
 </html>
