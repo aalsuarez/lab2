@@ -2,32 +2,31 @@
 <html>
 <head>
 <style>
-table, td, th {
-  border: 1px solid black;
-}
-
 table {
   border-collapse: collapse;
   width: 100%;
 }
 
-td {
-  height: 50px;
-  vertical-align: bottom;
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
 }
+
+tr:hover {background-color: coral;}
 </style>
 </head>
 <body>
 
-<h2>The vertical-align Property</h2>
+<h2>Hoverable Table</h2>
 
-<p>This property sets the vertical alignment (like top, bottom, or middle) of the content in th or td.</p>
+<p>Move the mouse over the table rows to see the effect.</p>
 
 <table>
   <tr>
-    <th>Firstname</th>
-    <th>Lastname</th>
-    <th>Savings</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Points</th>
   </tr>
   <tr>
     <td>Peter</td>
