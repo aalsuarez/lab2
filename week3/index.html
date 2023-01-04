@@ -1,55 +1,22 @@
-<!DOCTYPE html>
 <html>
 <head>
 <style> 
-#rcorners1 {
-  border-radius: 15px 50px 30px 5px;
-  background: #73AD21;
-  padding: 20px; 
-  width: 200px;
-  height: 150px; 
+#borderimg { 
+  border: 10px solid transparent;
+  padding: 15px;
+  border-image: url(border.png) 30 round;
 }
-
-#rcorners2 {
-  border-radius: 15px 50px 30px;
-  background: #73AD21;
-  padding: 20px; 
-  width: 200px;
-  height: 150px; 
-}
-
-#rcorners3 {
-  border-radius: 15px 50px;
-  background: #73AD21;
-  padding: 20px; 
-  width: 200px;
-  height: 150px; 
-} 
-
-#rcorners4 {
-  border-radius: 15px;
-  background: #73AD21;
-  padding: 20px; 
-  width: 200px;
-  height: 150px; 
-} 
 </style>
 </head>
 <body>
 
-<h1>The border-radius Property</h1>
+<h1>The border-image Property</h1>
 
-<p>Four values - border-radius: 15px 50px 30px 5px:</p>
-<p id="rcorners1"></p>
+<p>Here, the middle sections of the image are repeated to create the border:</p>
+<p id="borderimg">border-image: url(border.png) 30 round;</p>
 
-<p>Three values - border-radius: 15px 50px 30px:</p>
-<p id="rcorners2"></p>
-
-<p>Two values - border-radius: 15px 50px:</p>
-<p id="rcorners3"></p>
-
-<p>One value - border-radius: 15px:</p>
-<p id="rcorners4"></p>
+<p>Here is the original image:</p><img src="border.png">
+<p><strong>Note:</strong> Internet Explorer 10, and earlier versions, do not support the border-image property.</p>
 
 </body>
 </html>
