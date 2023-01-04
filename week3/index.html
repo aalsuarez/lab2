@@ -2,52 +2,71 @@
 <html>
 <head>
 <style>
-.grid-container {
-  display: grid;
-  gap: 10px;
-  background-color: #2196F3;
-  padding: 10px;
+body{
+  background-color: rgb(19, 19, 19);
 }
-
-.grid-item {
-  background-color: rgba(255, 255, 255, 0.8);
+h1{
+  color: rgb(34, 151, 235);
+  font-family: Franklin Gothic Medium;
   text-align: center;
-  padding: 20px;
-  font-size: 30px;
+  font-size: 40px;
+  margin-top: 50px;
+}
+p{
+  color: white;
+  font-family: Times New Roman;
+  font-size: 20px;
+}
+table, td, th {  
+  border: 1px solid #ddd;
+  text-align: left;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
 }
 
-.item1 {
-  grid-column: 1 / span 2;
-  grid-row: 1;
-}
-
-.item2 {
-  grid-column: 3;
-  grid-row: 1 / span 2;
-}
-
-.item5 {
-  grid-column: 1 / span 3;
-  grid-row: 3;
+th, td {
+  color:white;
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
 }
 </style>
 </head>
 <body>
-
-<h1>A Five Items Grid Layout</h1>
-
-<div class="grid-container">
-  <div class="grid-item item1">1</div>
-  <div class="grid-item item2">2</div>
-  <div class="grid-item item3">3</div>  
-  <div class="grid-item item4">4</div>
-  <div class="grid-item item5">5</div>
-</div>
-
-<p>Direct child elements(s) of the grid container automatically becomes grid items.</p>
-
-<p>Item 1, 2, and 5 are set to span multiple columns or rows.</p>
-
+<h1>Aaron Gabriel Suarez</h1>
+<p>Studying Bachelor of Science in Computer Science-Cyber Security and Forensics at Asia Pacific College</p>
+<p>Finished Senior High School at AMA Binan Laguna</p>
+<p>Finished Junior High School at Paharang Integrated School at Batangas City</p>
+<p>The following are my differnt hobbies.</p>
+<table>
+  <tr>
+    <th>Hobbies</th>
+    <th>Photos</th>
+  </tr>
+  <tr>
+    <td>Watching Anime</td>
+    <td><img src = "hero.jpe" height ="200" width = "200">
+    <img src = "onepiece.png" height ="200" width ="200">
+    <img src = "tokyo.jpg" height ="200" width ="200">
+    <img src ="aot.jpg" height ="200" width ="200"></td>
+  </tr>
+  <tr>
+    <td>Watching Movies</td>
+    <td><img src ="it.jpg" height= "200" width="200">
+    <img src = "avenger.jpg" height="200" width="200">
+    <img src = "pixel.jpg" height="200" width="200">
+    <img src = "wizard.jpg" height="200" width="200"></td>
+  </tr>
+  <tr>
+    <td>Playing Video Games</td>
+    <td><img src = "valo.jpg" height="200" width="200">
+      <img src = "ow.jpg" height="200" width="200">
+      <img src = "gta.jpg" height="200" width="200">
+      <img src = "genshin.jpg" height="200" width="200"></td>
+  </tr>
+</table>
 </body>
 </html>
 
