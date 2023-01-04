@@ -5,21 +5,25 @@
 div {
   width: 100px;
   height: 100px;
-  background: red;
-  transition: width 2s;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
 }
 
-div:hover {
-  width: 300px;
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
 }
 </style>
 </head>
 <body>
 
-<h1>The transition Property</h1>
+<h1>CSS Animation</h1>
 
-<p>Hover over the div element below, to see the transition effect:</p>
 <div></div>
+
+<p><b>Note:</b> When an animation is finished, it goes back to its original style.</p>
 
 </body>
 </html>
+
