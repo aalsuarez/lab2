@@ -2,21 +2,19 @@
 <html>
 <head>
 <style>
-body {
-  background-color: pink;
-}
-
-@media screen and (min-width: 480px) {
-  body {
-    background-color: lightgreen;
-  }
+#grad1 {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(red, yellow);
 }
 </style>
 </head>
 <body>
 
-<h1>Resize the browser window to see the effect!</h1>
-<p>The media query will only apply if the media type is screen and the viewport is 480px wide or wider.</p>
+<h1>Linear Gradient - Top to Bottom</h1>
+<p>This linear gradient starts red at the top, transitioning to yellow at the bottom:</p>
+
+<div id="grad1"></div>
 
 </body>
 </html>
