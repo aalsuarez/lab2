@@ -38,13 +38,15 @@ th, td {
 </head>
 <body>
 <h1>Aaron Gabriel Suarez</h1>
+<p id = "name"></p>
 <p>Studying Bachelor of Science in Computer Science-Cyber Security and Forensics at Asia Pacific College</p>
 <p>Finished Senior High School at AMA Binan Laguna</p>
 <p>Finished Junior High School at Paharang Integrated School at Batangas City</p>
 <p>The following are my differnt hobbies.</p>
 <script>
-  let a = "aaron";
-  window.alert("Good Morning Visitors and "+ a);
+  let name = "Visitors";
+  window.alert("Good Morning " + name);
+  document.getElementById("name").innerHTML = "Good Morning " + name;
 </script>
 <table>
   <tr>
