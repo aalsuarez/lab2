@@ -8,6 +8,13 @@ body{
   background-color: rgb(19, 19, 19);
 }
 h1{
+  color: white;
+  font-family: Franklin Gothic Medium;
+  text-align: right;
+  font-size: 10px;
+  margin-top: 50px;
+}
+h2{
   color: rgb(34, 151, 235);
   font-family: Franklin Gothic Medium;
   text-align: center;
@@ -37,7 +44,8 @@ th, td {
 </style>
 </head>
 <body>
-<h1>Aaron Gabriel Suarez</h1>
+<h1 id = "time"></h1>
+<h2>Aaron Gabriel Suarez</h2>
 <p id = "name"></p>
 <p>Studying Bachelor of Science in Computer Science-Cyber Security and Forensics at Asia Pacific College</p>
 <p>Finished Senior High School at AMA Binan Laguna</p>
@@ -47,6 +55,9 @@ th, td {
   let name = "Visitors";
   window.alert("Good Morning " + name);
   document.getElementById("name").innerHTML = "Good Morning " + name;
+  
+  const a = new Date();
+  document.getElementById("time").innerHTML = a;
 </script>
 <table>
   <tr>
