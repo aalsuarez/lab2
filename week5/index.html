@@ -52,9 +52,17 @@ th, td {
 <p>Finished Junior High School at Paharang Integrated School at Batangas City</p>
 <p>The following are my differnt hobbies.</p>
 <script>
+  const hour = new Date().getHours();
+  let greeting;
+  if (hour < 18) {
+    greeting = "Good Morning";
+  } else {
+    greeting = "Good Evening";
+  }
+
   let name = "Visitors";
-  window.alert("Good Morning " + name);
-  document.getElementById("name").innerHTML = "Good Morning " + name;
+  window.alert(greeting +" "+ name);
+  document.getElementById("name").innerHTML = greeting +" "+ name;
   
   const a = new Date();
   document.getElementById("time").innerHTML = a;
