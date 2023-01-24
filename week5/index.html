@@ -51,6 +51,7 @@ th, td {
 <p>Finished Senior High School at AMA Binan Laguna</p>
 <p>Finished Junior High School at Paharang Integrated School at Batangas City</p>
 <p id = "random"></p>
+<p id = "body"></p>
 <p>The following are my differnt hobbies.</p>
 <script>
   const hour = new Date().getHours();
@@ -69,6 +70,12 @@ th, td {
   document.getElementById("time").innerHTML = a;
 
   document.getElementById("random").innerHTML = "My favorite number is " + (Math.ceil(Math.random()*50));
+
+  const body = {
+    height: 160,
+    weight: 49,
+  };
+
 </script>
 <table>
   <tr>
