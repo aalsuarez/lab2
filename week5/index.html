@@ -50,6 +50,7 @@ th, td {
 <p>Studying Bachelor of Science in Computer Science-Cyber Security and Forensics at Asia Pacific College</p>
 <p>Finished Senior High School at AMA Binan Laguna</p>
 <p>Finished Junior High School at Paharang Integrated School at Batangas City</p>
+<p id = "random"></p>
 <p>The following are my differnt hobbies.</p>
 <script>
   const hour = new Date().getHours();
@@ -66,6 +67,8 @@ th, td {
   
   const a = new Date();
   document.getElementById("time").innerHTML = a;
+
+  document.getElementById("random").innerHTML = "My favorite number is " + (Math.ceil(Math.random()*50));
 </script>
 <table>
   <tr>
