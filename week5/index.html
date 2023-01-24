@@ -53,6 +53,33 @@ th, td {
 <p id = "random"></p>
 <p id = "body"></p>
 <p>The following are my differnt hobbies.</p>
+<table>
+  <tr>
+    <th>Hobbies</th>
+    <th>Photos</th>
+  </tr>
+  <tr>
+    <td id = "anime"></td>
+    <td><img src = "midorya.jpe" height ="200" width = "200">
+    <img src = "luffy.png" height ="200" width ="200">
+    <img src = "takemitchi.jpg" height ="200" width ="200">
+    <img src ="eren.jpg" height ="200" width ="200"></td>
+  </tr>
+  <tr>
+    <td id = "movie"></td>
+    <td><img src ="bill.jpg" height= "200" width="200">
+    <img src = "tony.jpg" height="200" width="200">
+    <img src = "pacman.jpg" height="200" width="200">
+    <img src = "potter.jpg" height="200" width="200"></td>
+  </tr>
+  <tr>
+    <td id = "games"></td>
+    <td><img src = "riot.jpg" height="200" width="200">
+      <img src = "ov2.jpg" height="200" width="200">
+      <img src = "Grand.jpg" height="200" width="200">
+      <img src = "mihoyo.jpg" height="200" width="200"></td>
+  </tr>
+</table>
 <script>
   const hour = new Date().getHours();
   let greeting;
@@ -78,33 +105,14 @@ th, td {
   };
 
   document.getElementById("body").innerHTML = body.mybody();
+
+  const anime = new Set(["My hero academia", "One Piece", "Tokyo Revengers", "Attack on Titan"]);
+  const Movie = new Set(["IT", "Avengers", "Pixels", "Harry Potter"]);
+  const VGames = new Set(["Valorant", "Overwatch2", "GTAV", "Genshin Impact"]);
+
+  document.getElementById("anime").innerHTML = "Watching Anime:" + anime.size;
+  document.getElementById("movie").innerHTML = "Watching Movie:" + Movie.size;
+  document.getElementById("Games").innerHTML = "Playing Video Games:" + Vgames.size;
 </script>
-<table>
-  <tr>
-    <th>Hobbies</th>
-    <th>Photos</th>
-  </tr>
-  <tr>
-    <td>Watching Anime</td>
-    <td><img src = "midorya.jpe" height ="200" width = "200">
-    <img src = "luffy.png" height ="200" width ="200">
-    <img src = "takemitchi.jpg" height ="200" width ="200">
-    <img src ="eren.jpg" height ="200" width ="200"></td>
-  </tr>
-  <tr>
-    <td>Watching Movies</td>
-    <td><img src ="bill.jpg" height= "200" width="200">
-    <img src = "tony.jpg" height="200" width="200">
-    <img src = "pacman.jpg" height="200" width="200">
-    <img src = "potter.jpg" height="200" width="200"></td>
-  </tr>
-  <tr>
-    <td>Playing Video Games</td>
-    <td><img src = "riot.jpg" height="200" width="200">
-      <img src = "ov2.jpg" height="200" width="200">
-      <img src = "Grand.jpg" height="200" width="200">
-      <img src = "mihoyo.jpg" height="200" width="200"></td>
-  </tr>
-</table>
 </body>
 </html>
