@@ -73,7 +73,7 @@ th, td {
     <img src = "potter.jpg" height="200" width="200"></td>
   </tr>
   <tr>
-    <td id = "games"></td>
+    <td id = "Games"></td>
     <td><img src = "riot.jpg" height="200" width="200">
       <img src = "ov2.jpg" height="200" width="200">
       <img src = "Grand.jpg" height="200" width="200">
@@ -113,6 +113,11 @@ th, td {
   document.getElementById("anime").innerHTML = "Watching Anime:" + anime.size;
   document.getElementById("movie").innerHTML = "Watching Movie:" + Movie.size;
   document.getElementById("Games").innerHTML = "Playing Video Games:" + Vgames.size;
+
+  let myname = '{"names":[' + '{"firstname" : "Aaron Gabriel, "lastname" : "Suarez"}]}';
+  const object = JSON.parse(text);
+  document.getElementById("myname").innerHTML = object.names[0].firstname + " " + object.names[0].lastname;
+
 </script>
 </body>
 </html>
