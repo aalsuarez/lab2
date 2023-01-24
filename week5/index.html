@@ -74,8 +74,10 @@ th, td {
   const body = {
     height: 160,
     weight: 49,
+    mybody: function(){return "my height is " + this.height + " centimeters " + "and " + "my weight is " + this.weight + " kilograms ";}
   };
 
+  document.getElementById("body").innerHTML = body.mybody();
 </script>
 <table>
   <tr>
