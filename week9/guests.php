@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "MyDB";
+$username = "webprogss211";
+$password = "webprogss211";
+$dbname = "webprogss211";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -17,7 +17,7 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
   // output data of each row
   while($row = $result->fetch_assoc()) {
-    echo "id: " . $row["id"]. " - Name: " . $row["name"]. "<br>";
+    echo "id: " . $row["id"]. " - Name: " . $row["name"]."email: ".$email["email"]. "<br>";
   }
 } else {
   echo "0 results";
